@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".core.ui.joinorganization.JoinOrganizationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/notebook"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_joinorganization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Join an organization"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <SearchView
+            android:id="@+id/sv_searchOrganization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:queryHint="Search Here"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="334dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp"
+            app:contentPadding="4dp">
+
+            <TextView
+                android:id="@+id/tv_organiztionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Temporary Org name" />
+
+            <TextView
+                android:id="@+id/tv_organizationLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_gravity="bottom|left"
+                android:text="Lagos, Nigeria" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:text="Join" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

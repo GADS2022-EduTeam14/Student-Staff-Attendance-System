@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">android_app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="welcome_message">Welcome</string>
+    <string name="welcome_text">We are here to make your attendance system
+        as easy as possible</string>
+    <string name="frag_screen_title_two">Need a smart attendance system?</string>
+    <string name="frag_screen_title_three">Are you an organization that needs to organize school data?</string>
+    <string name="frag_screen_text_two"> We got you covered for attendance collection
+    and insight into staff and student performance data</string>
+    <string name="frag_screen_text_three"> We got you covered for easy access to data
+    for making your next decision</string>
+    <string name="next">Next</string>
+    <string name="continue_text">Continue</string>
+
+    <!-- This is just a template for organization types-->
+    <string-array name="OrgTypeDummy">
+        <item>Ghana Gov</item>
+        <item>Nigeria Gov</item>
+        <item>Nigeria Gov</item>
+    </string-array>
+
+    <!-- This is the template entries for time-->
+    <string-array name="SchoolTimes">
+        <item>6:00</item>
+        <item>7:00</item>
+        <item>8:00</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+
 </resources>
