@@ -15,8 +15,8 @@
             android:id="@+id/imageView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/notebook"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/pencil_bucket" />
 
         <TextView
             android:id="@+id/tv_joinorganization"

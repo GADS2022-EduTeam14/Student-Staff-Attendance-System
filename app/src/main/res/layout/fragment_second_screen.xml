@@ -9,32 +9,24 @@
 
 
     <ImageView
-        android:id="@+id/iv_logo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="84dp"
-        android:src="@drawable/search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:src="@drawable/notebook__1_"
+        android:layout_width="207dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="168dp"
+        android:src="@drawable/product_ideas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="74dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="24dp"
-        android:text="Get a summary of the"
+        android:layout_marginRight="25dp"
+        android:text="@string/frag_screen_title_two"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,12 +36,14 @@
 
     <TextView
         android:id="@+id/description2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="388dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="24dp"
+        android:layout_marginRight="25dp"
         android:gravity="center"
         android:text="@string/frag_screen_text_two"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

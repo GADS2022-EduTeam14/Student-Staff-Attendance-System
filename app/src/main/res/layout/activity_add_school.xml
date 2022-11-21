@@ -20,7 +20,7 @@
             android:id="@+id/imageView4"
             android:layout_width="314dp"
             android:layout_height="98dp"
-            app:srcCompat="@drawable/study_owl"
+            app:srcCompat="@drawable/pencil_bucket"
             tools:layout_editor_absoluteX="131dp"
             tools:layout_editor_absoluteY="96dp" />
 

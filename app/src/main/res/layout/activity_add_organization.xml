@@ -21,7 +21,7 @@
             android:id="@+id/iv_AddOrg"
             android:layout_width="281dp"
             android:layout_height="93dp"
-            app:srcCompat="@drawable/business_deal_handshake_circle"
+            app:srcCompat="@drawable/pencil_bucket"
             tools:layout_editor_absoluteX="131dp"
             tools:layout_editor_absoluteY="96dp" />
 
