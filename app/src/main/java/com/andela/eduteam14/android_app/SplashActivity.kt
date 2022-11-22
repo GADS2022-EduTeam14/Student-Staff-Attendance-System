@@ -3,9 +3,13 @@ package com.andela.eduteam14.android_app
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import com.andela.eduteam14.android_app.core.ui.UiAction
+import com.andela.eduteam14.android_app.core.ui.auth.AuthActivity
+import com.andela.eduteam14.android_app.core.ui.extensions.goto
 import com.andela.eduteam14.android_app.databinding.ActivityMainBinding
 
 @SuppressLint("CustomSplashScreen")
@@ -21,6 +25,10 @@ class SplashActivity : AppCompatActivity(), UiAction {
         initViews()
 
         onLoadSplashScreen()
+
+        Handler(Looper.getMainLooper()).postDelayed({
+           goto(AuthActivity::class.java)
+        }, 3000)
     }
 
     private fun onLoadSplashScreen() {

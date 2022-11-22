@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/organization_nav_graph"
+    app:startDestination="@id/homeOrganizationFragment">
+
+    <fragment
+        android:id="@+id/homeOrganizationFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.home.HomeOrganizationFragment"
+        android:label="HomeOrganizationFragment" />
+    <fragment
+        android:id="@+id/attendanceOrganizationFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.attendance.AttendanceOrganizationFragment"
+        android:label="AttendanceOrganizationFragment" />
+    <fragment
+        android:id="@+id/historyOrganizationFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.history.HistoryOrganizationFragment"
+        android:label="HistoryOrganizationFragment" />
+    <fragment
+        android:id="@+id/settingsOrganizationFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.settings.SettingsOrganizationFragment"
+        android:label="SettingsOrganizationFragment" >
+        <action
+            android:id="@+id/action_settingsOrganizationFragment_to_adminProfileFragment2"
+            app:destination="@id/adminProfileFragment2" />
+        <action
+            android:id="@+id/action_settingsOrganizationFragment_to_loginFragment3"
+            app:destination="@id/loginFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminProfileFragment2"
+        android:name="com.andela.eduteam14.android_app.core.ui.profile.AdminProfileFragment"
+        android:label="AdminProfileFragment" />
+    <fragment
+        android:id="@+id/loginFragment3"
+        android:name="com.andela.eduteam14.android_app.core.ui.auth.LoginFragment"
+        android:label="LoginFragment" />
+</navigation>

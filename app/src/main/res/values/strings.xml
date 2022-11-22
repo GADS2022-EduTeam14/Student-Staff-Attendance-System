@@ -5,4 +5,11 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="hint_confirm_password">Confirm password</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="smart_school_attendance">Smart school\nattendance</string>
+    <string name="not_yet_implemented">Not yet implemented</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
 </resources>

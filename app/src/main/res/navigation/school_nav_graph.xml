@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeSchoolFragment">
+
+    <fragment
+        android:id="@+id/homeSchoolFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.home.HomeSchoolFragment"
+        android:label="HomeSchoolFragment" />
+    <fragment
+        android:id="@+id/attendanceSchoolFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.attendance.AttendanceSchoolFragment"
+        android:label="AttendanceSchoolFragment" >
+        <action
+            android:id="@+id/action_attendanceSchoolFragment_to_studentAttendanceFragment"
+            app:destination="@id/studentAttendanceFragment" />
+        <action
+            android:id="@+id/action_attendanceSchoolFragment_to_staffAttendanceFragment"
+            app:destination="@id/staffAttendanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historySchoolFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.history.HistorySchoolFragment"
+        android:label="HistorySchoolFragment" />
+    <fragment
+        android:id="@+id/settingsSchoolFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.settings.SettingsSchoolFragment"
+        android:label="SettingsSchoolFragment" >
+        <action
+            android:id="@+id/action_settingsSchoolFragment_to_classInformationFragment"
+            app:destination="@id/classInformationFragment" />
+        <action
+            android:id="@+id/action_settingsSchoolFragment_to_addSchoolFragment2"
+            app:destination="@id/addSchoolFragment2" />
+        <action
+            android:id="@+id/action_settingsSchoolFragment_to_adminProfileFragment"
+            app:destination="@id/adminProfileFragment" />
+        <action
+            android:id="@+id/action_settingsSchoolFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/staffAttendanceFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.attendance.StaffAttendanceFragment"
+        android:label="StaffAttendanceFragment" />
+    <fragment
+        android:id="@+id/studentAttendanceFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.attendance.StudentAttendanceFragment"
+        android:label="StudentAttendanceFragment" />
+    <fragment
+        android:id="@+id/classInformationFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.addschool.ClassInformationFragment"
+        android:label="ClassInformationFragment" />
+    <fragment
+        android:id="@+id/addSchoolFragment2"
+        android:name="com.andela.eduteam14.android_app.core.ui.addschool.AddSchoolFragment"
+        android:label="AddSchoolFragment" />
+    <fragment
+        android:id="@+id/adminProfileFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.profile.AdminProfileFragment"
+        android:label="AdminProfileFragment" />
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.andela.eduteam14.android_app.core.ui.auth.LoginFragment"
+        android:label="LoginFragment" />
+</navigation>

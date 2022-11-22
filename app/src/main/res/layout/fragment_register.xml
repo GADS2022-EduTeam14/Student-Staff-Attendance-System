@@ -5,14 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/RegisterFragmentEmailLayout"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+    <ImageView
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/pencil_case"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/smart_school_attendance"
+        android:textAlignment="center"
+        android:textColor="@color/LocalBrown"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:text="@string/create_your_account"
+        android:textAlignment="center"
+        android:textColor="@color/LocalBrown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/RegisterFragmentEmailLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/hint_email"
         android:textColorHint="?attr/colorPrimary"
         app:boxStrokeColor="?attr/colorPrimary"
@@ -21,17 +63,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:shapeAppearance="@style/ShapeAppearance.EduTeam.LargeComponent">
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
             android:imeOptions="actionNext"
-            android:textStyle="bold"
             android:inputType="textEmailAddress"
             android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="86dp" />
 
@@ -40,12 +81,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/RegisterFragmentPasswordLayout"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/hint_password"
         android:textColorHint="?attr/colorPrimary"
         app:boxStrokeColor="?attr/colorPrimary"
@@ -54,17 +94,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterFragmentEmailLayout"
-        app:shapeAppearance="@style/ShapeAppearance.EduTeam.LargeComponent">
+        app:layout_constraintTop_toBottomOf="@+id/RegisterFragmentEmailLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
-            android:textStyle="bold"
             android:imeOptions="actionNext"
             android:inputType="textPassword"
             android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="86dp" />
 
@@ -73,12 +112,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/RegisterFragmentConfirmPasswordLayout"
-        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="@string/hint_confirm_password"
         android:textColorHint="?attr/colorPrimary"
         app:boxStrokeColor="?attr/colorPrimary"
@@ -87,13 +125,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterFragmentPasswordLayout"
-        app:shapeAppearance="@style/ShapeAppearance.EduTeam.LargeComponent">
+        app:layout_constraintTop_toBottomOf="@+id/RegisterFragmentPasswordLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_confirm_password"
             android:imeOptions="actionNext"
             android:inputType="textPassword"
             android:textColor="?attr/colorPrimary"
@@ -159,14 +196,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="109dp" />
+        app:layout_constraintGuide_begin="92dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="307dp" />
+        app:layout_constraintGuide_end="92dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

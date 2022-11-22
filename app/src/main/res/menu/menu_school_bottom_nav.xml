@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/homeSchoolFragment"
+        android:icon="@drawable/home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@id/attendanceSchoolFragment"
+        android:icon="@drawable/calendar_month"
+        android:title="@string/attendance" />
+
+    <item
+        android:id="@id/historySchoolFragment"
+        android:icon="@drawable/sharp_history"
+        android:title="@string/history" />
+
+    <item
+        android:id="@id/settingsSchoolFragment"
+        android:icon="@drawable/spanner"
+        android:title="@string/settings" />
+
+</menu>
