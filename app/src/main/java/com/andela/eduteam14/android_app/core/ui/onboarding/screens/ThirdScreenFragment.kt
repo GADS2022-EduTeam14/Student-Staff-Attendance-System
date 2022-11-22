@@ -27,6 +27,7 @@ class ThirdScreenFragment : Fragment() {
 
             //viewPager?.currentItem = 0
             //Use the findNaveController
+
         }
 
         return view
