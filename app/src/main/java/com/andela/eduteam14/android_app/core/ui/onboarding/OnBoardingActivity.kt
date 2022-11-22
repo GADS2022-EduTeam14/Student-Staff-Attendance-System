@@ -1,16 +1,12 @@
 package com.andela.eduteam14.android_app.core.ui.onboarding
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager2.widget.ViewPager2
+import android.os.Bundle
 import com.andela.eduteam14.android_app.R
 
-class Onboarding  : AppCompatActivity() {
-
+class OnBoardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_onboarding)
-
-        supportActionBar?.hide()
+        setContentView(R.layout.activity_on_boarding)
     }
 }
