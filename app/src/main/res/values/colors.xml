@@ -9,6 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
 
+    <color name="gray">#979393</color>
+    <color name="grayDark">#4C4B4B</color>
+
+
     <color name="LocalBrown">#201717</color>
     <color name="LocalBrownDark">#1C1010</color>
 

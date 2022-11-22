@@ -14,14 +14,20 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/school_nav_graph" />
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/SchoolBottomNav"
-        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        style="@style/Widget.Material3.BottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="72dp"
+        app:labelVisibilityMode="unlabeled"
+        app:backgroundTint="@color/white"
+        app:elevation="8dp"
+        app:itemIconTint="@color/grayDark"
+        app:itemIconSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_school_bottom_nav" />
+        app:menu="@menu/menu_school_bottom_nav"  />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

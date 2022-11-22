@@ -43,7 +43,7 @@ class LoginFragment : Fragment(), UiAction {
 
         mainItem.onClick { findNavController().navigate(R.id.action_loginFragment_to_registerFragment) }
 
-        mainItem.onLongClick { (activity as AuthActivity).goto(OrganizationBaseActivity::class.java) }
+        mainItem.onLongClick { (activity as AuthActivity).goto(SchoolBaseActivity::class.java) }
     }
 
     override fun initViews() {

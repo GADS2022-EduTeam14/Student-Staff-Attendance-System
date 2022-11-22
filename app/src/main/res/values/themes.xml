@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Android_app" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Android_app" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/LocalBrown</item>
         <item name="colorPrimaryVariant">@color/LocalBrownDark</item>
@@ -13,6 +13,10 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
 
         <item name="colorOnSurface">?attr/colorPrimary</item>
+
+        <item name="colorOnSecondaryContainer">?attr/colorPrimary</item>
+
+
         <!-- Customize your theme here. -->
 
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.EduTeam.SmallComponent
