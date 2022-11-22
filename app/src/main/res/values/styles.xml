@@ -16,4 +16,8 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">4dp</item>
     </style>
+
+    <style name="CustomAlertDialog"
+        parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+    </style>
 </resources>

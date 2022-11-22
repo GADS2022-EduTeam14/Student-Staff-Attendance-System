@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -25,6 +26,9 @@ class LoginFragment : Fragment(), UiAction {
 
     private val binding get() = _binding
 
+    private lateinit var login: Button
+    private lateinit var registerInstead: TextView
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,10 +44,15 @@ class LoginFragment : Fragment(), UiAction {
         super.onViewCreated(view, savedInstanceState)
         initViews()
 
+        registerInstead.onClick { findNavController().navigate(R.id.action_loginFragment_to_registerFragment) }
+
+        login.onClick { (activity as AuthActivity).goto(SchoolBaseActivity::class.java) }
+
     }
 
     override fun initViews() {
-        ShowToast(requireContext())
+        login = binding?.LoginFragmentLoginBtn!!
+        registerInstead = binding?.NewUser!!
     }
 
     override fun onDestroyComponents() {
