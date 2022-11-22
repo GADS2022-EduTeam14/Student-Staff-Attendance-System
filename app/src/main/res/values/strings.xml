@@ -14,4 +14,8 @@
     <string name="settings">Settings</string>
     <string name="submit">Submit</string>
     <string name="request_new_code">Request new code?</string>
+    <string name="send_5_digit_code">A 5-digit code has been sent to\nexample@email.com. Please enter\nit below to continue.</string>
+    <string name="account_activation">Account\nActivation</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="login">Login</string>
 </resources>
