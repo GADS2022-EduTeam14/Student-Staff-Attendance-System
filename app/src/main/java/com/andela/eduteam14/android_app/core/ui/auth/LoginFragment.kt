@@ -25,7 +25,6 @@ class LoginFragment : Fragment(), UiAction {
 
     private val binding get() = _binding
 
-    private lateinit var mainItem: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,13 +40,9 @@ class LoginFragment : Fragment(), UiAction {
         super.onViewCreated(view, savedInstanceState)
         initViews()
 
-        mainItem.onClick { findNavController().navigate(R.id.action_loginFragment_to_registerFragment) }
-
-        mainItem.onLongClick { (activity as AuthActivity).goto(SchoolBaseActivity::class.java) }
     }
 
     override fun initViews() {
-        mainItem = binding?.MainItem!!
         ShowToast(requireContext())
     }
 

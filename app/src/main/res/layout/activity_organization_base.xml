@@ -23,7 +23,7 @@
         app:backgroundTint="@color/white"
         app:elevation="8dp"
         app:itemIconTint="@color/grayDark"
-        app:itemIconSize="32dp"
+        app:itemIconSize="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
