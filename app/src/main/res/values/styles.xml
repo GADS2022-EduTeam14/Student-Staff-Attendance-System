@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="ShapeAppearance.EduTeam.SmallComponent"
-        parent="ShapeAppearance.Material3.SmallComponent">
-        <item  name="cornerFamily">cut</item>
+
+    <style name="ShapeAppearance.EduTeam.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">cut</item>
         <item name="cornerSize">4dp</item>
     </style>
 
@@ -17,7 +17,8 @@
         <item name="cornerSize">4dp</item>
     </style>
 
-    <style name="CustomAlertDialog"
-        parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+    <style name="CustomAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
     </style>
 </resources>

@@ -25,5 +25,6 @@
         </item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.EduTeam.LargeComponent
         </item>
+
     </style>
 </resources>
