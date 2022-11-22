@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -18,7 +19,7 @@ class EmailVerificationFragment : Fragment(), UiAction {
     private var _binding: FragmentEmailVerificationBinding? = null
     private val binding get() = _binding
 
-    private lateinit var dummy: TextView
+    private lateinit var submitButton: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,11 +35,11 @@ class EmailVerificationFragment : Fragment(), UiAction {
         super.onViewCreated(view, savedInstanceState)
         initViews()
 
-        dummy.onClick { findNavController().navigate(R.id.action_emailVerificationFragment_to_loginFragment) }
+        submitButton.onClick { findNavController().navigate(R.id.action_emailVerificationFragment_to_loginFragment) }
     }
 
     override fun initViews() {
-        dummy = binding?.Dummy!!
+        submitButton = binding?.EmailVerificationSubmitBtn!!
     }
 
     override fun onDestroyComponents() {
