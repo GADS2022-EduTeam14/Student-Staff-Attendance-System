@@ -54,6 +54,8 @@ class HomeSchoolFragment : Fragment(), UiAction {
         super.onViewCreated(view, savedInstanceState)
         initViews()
 
+        (activity as SchoolBaseActivity).hideFab()
+
         homeAdapter = SchoolHomeAdapter(requireContext(), registry)
 
 
