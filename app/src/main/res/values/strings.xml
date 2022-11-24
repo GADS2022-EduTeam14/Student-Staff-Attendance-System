@@ -27,4 +27,14 @@
     <string name="join_an_organization">Join an organization</string>
     <string name="search_organization">Search organization</string>
     <string name="join">Join</string>
+    <string name="total_male_staff">Male staff: %1$s</string>
+    <string name="total_female_staff">Female staff: %1$s</string>
+    <string name="male_staff">Male staff: %1$s</string>
+    <string name="female_staff">Female staff: %1$s</string>
+    <string name="school_name">Maryland International College</string>
+    <string name="time">2 days ago</string>
+    <string name="female_student">Female students: %1$s</string>
+    <string name="male_student">Male students: %1$s</string>
+    <string name="record">Record</string>
+    <string name="search_all">Search all</string>
 </resources>

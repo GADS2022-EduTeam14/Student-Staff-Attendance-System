@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import com.andela.eduteam14.android_app.core.ui.SchoolBaseActivity
 import com.andela.eduteam14.android_app.core.ui.UiAction
 import com.andela.eduteam14.android_app.core.ui.auth.AuthActivity
 import com.andela.eduteam14.android_app.core.ui.extensions.ShowToast
@@ -22,6 +24,7 @@ class JoinOrganizationFragment : Fragment(), UiAction {
     private val binding get() = _binding
 
     private lateinit var searchBar: LinearLayout
+    private lateinit var join: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,14 +42,22 @@ class JoinOrganizationFragment : Fragment(), UiAction {
         initViews()
 
         searchBar.onClick { (activity as AuthActivity).goto(SearchActivity::class.java) }
+
+        join.onClick { (activity as AuthActivity).goto(SchoolBaseActivity::class.java) }
     }
 
     override fun initViews() {
-       searchBar = binding?.JoinOrganizationSearchBar!!
+        searchBar = binding?.JoinOrganizationSearchBar!!
+        join = binding?.JoinOrganizationFragmentJoinBtn!!
     }
 
     override fun onDestroyComponents() {
+        _binding = null
+    }
 
+    override fun onDestroy() {
+        onDestroyComponents()
+        super.onDestroy()
     }
 
 }
