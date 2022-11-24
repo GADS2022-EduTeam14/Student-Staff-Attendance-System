@@ -47,4 +47,8 @@
     <string name="staff_information">Staff Information</string>
     <string name="school_information">School Information</string>
     <string name="save">Save</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_username">Username</string>
+    <string name="edit_your_profile">Edit your profile</string>
 </resources>

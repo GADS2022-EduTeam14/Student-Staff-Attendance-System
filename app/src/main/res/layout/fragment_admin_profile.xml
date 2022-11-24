@@ -1,18 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/edit_your_profile"
+        android:textAlignment="center"
+        android:textColor="@color/LocalBrown"
+        android:textSize="42sp"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AdminProfileFragmentUsernameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AdminProfileFragmentUsernameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/hint_username"
+        android:textColorHint="?attr/colorPrimary"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxStrokeWidth="1dp"
+        android:layout_marginBottom="16dp"
+        app:boxStrokeWidthFocused="1.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/AdminProfileFragmentPhoneLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/AdminProfileFragmentPhoneLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/hint_phone"
+        android:textColorHint="?attr/colorPrimary"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxStrokeWidth="1dp"
+        android:layout_marginBottom="16dp"
+        app:boxStrokeWidthFocused="1.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/AdminProfileFragmentAddressLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/AdminProfileFragmentAddressLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:paddingBottom="100dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="@string/hint_confirm_password"
+        android:hint="@string/hint_address"
         android:textColorHint="?attr/colorPrimary"
         app:boxStrokeColor="?attr/colorPrimary"
         app:boxStrokeWidth="1dp"
@@ -26,8 +103,8 @@
             style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
             android:textColor="?attr/colorPrimary"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="14dp"
@@ -41,9 +118,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/save"
-        android:layout_marginTop="0dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,6 +134,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="213dp" />
+        app:layout_constraintGuide_end="379dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
