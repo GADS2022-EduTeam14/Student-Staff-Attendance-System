@@ -2,13 +2,17 @@ package com.andela.eduteam14.android_app.core.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
+import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.andela.eduteam14.android_app.MainApplication
 import com.andela.eduteam14.android_app.R
 import com.andela.eduteam14.android_app.core.di.CoreComponent
 import com.andela.eduteam14.android_app.core.ui.extensions.onItemClick
+import com.andela.eduteam14.android_app.core.ui.settings.GO_TO_LOGIN
+import com.andela.eduteam14.android_app.core.ui.settings.KEY_DESTINATION
 import com.andela.eduteam14.android_app.databinding.ActivityBaseBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -16,6 +20,7 @@ import com.google.android.material.floatingactionbutton.ExtendedFloatingActionBu
 
 class SchoolBaseActivity : AppCompatActivity(), UiAction {
 
+    private lateinit var navController: NavController
     private lateinit var navView: BottomNavigationView
     private var _binding: ActivityBaseBinding? = null
 
@@ -41,7 +46,7 @@ class SchoolBaseActivity : AppCompatActivity(), UiAction {
             supportFragmentManager.findFragmentById(R.id.BaseNavHostFragment)
                     as NavHostFragment
 
-        val navController = navHostFragment.navController
+        navController = navHostFragment.navController
         navView.setupWithNavController(navController)
 
 
@@ -49,6 +54,17 @@ class SchoolBaseActivity : AppCompatActivity(), UiAction {
 
         hideFab()
 
+    }
+
+
+    override fun onResume() {
+        super.onResume()
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i(TAG, "onStart: Called")
     }
 
     fun hideFab() {
@@ -87,5 +103,9 @@ class SchoolBaseActivity : AppCompatActivity(), UiAction {
     override fun onDestroy() {
         onDestroyComponents()
         super.onDestroy()
+    }
+
+    companion object {
+        val TAG = "SchoolBaseActivity"
     }
 }

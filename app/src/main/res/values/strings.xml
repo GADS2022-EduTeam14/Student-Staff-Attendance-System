@@ -37,4 +37,13 @@
     <string name="male_student">Male students: %1$s</string>
     <string name="record">Record</string>
     <string name="search_all">Search all</string>
+    <string name="received_by">Received by The Federal Ministry of Education Abuja, Nigeria.</string>
+    <string name="date">March 11, 2002</string>
+    <string name="logout">Log out</string>
+    <string name="admin_profile">Admin Profile</string>
+    <string name="personal">Personal</string>
+    <string name="official">Official</string>
+    <string name="student_classes">Students and classes</string>
+    <string name="staff_information">Staff Information</string>
+    <string name="school_information">School Information</string>
 </resources>

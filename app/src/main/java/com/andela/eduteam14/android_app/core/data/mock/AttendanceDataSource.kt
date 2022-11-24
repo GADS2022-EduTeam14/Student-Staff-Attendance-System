@@ -1,5 +1,6 @@
 package com.andela.eduteam14.android_app.core.data.mock
 
+import com.andela.eduteam14.android_app.core.data.models.LocalAttendanceHistory
 import com.andela.eduteam14.android_app.core.data.models.LocalDailyAttendance
 import java.util.UUID
 
@@ -40,5 +41,44 @@ class AttendanceDataSource {
         LocalDailyAttendance.Default,
         LocalDailyAttendance.Default,
         LocalDailyAttendance.Default,
+    )
+
+    val history = listOf(
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
+        LocalAttendanceHistory.Default,
     )
 }

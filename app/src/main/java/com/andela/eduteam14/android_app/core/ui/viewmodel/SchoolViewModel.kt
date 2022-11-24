@@ -10,6 +10,11 @@ class SchoolViewModel(
     private val datasource: AttendanceDataSource,
 ) : ViewModel() {
     val entries = datasource.allDailies
+
+    val history = datasource.history
+
+    val attendanceRegistry = registry
+
 }
 
 
