@@ -10,6 +10,8 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.andela.eduteam14.android_app.R
 import com.andela.eduteam14.android_app.core.ui.SchoolBaseActivity
 import com.andela.eduteam14.android_app.core.ui.UiAction
 import com.andela.eduteam14.android_app.core.ui.auth.AuthActivity
@@ -76,7 +78,11 @@ class SettingsSchoolFragment : Fragment(), UiAction {
 
         studentAndClass.onClick { }
 
-        adminProfile.onClick { }
+        adminProfile.onClick {
+            findNavController().navigate(
+                R.id.action_settingsSchoolFragment_to_adminProfileFragment
+            )
+        }
 
         logout.onClick {
             (activity as SchoolBaseActivity).goto(

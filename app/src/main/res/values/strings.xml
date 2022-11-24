@@ -46,4 +46,5 @@
     <string name="student_classes">Students and classes</string>
     <string name="staff_information">Staff Information</string>
     <string name="school_information">School Information</string>
+    <string name="save">Save</string>
 </resources>
