@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/layout/fragment_add_school.xml" value="0.1490036231884058" />
+        <entry key="..\:/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/layout/fragment_admin_profile.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/layout/fragment_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/layout/fragment_register.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/layout/fragment_student_attendance.xml" value="0.22826086956521738" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
