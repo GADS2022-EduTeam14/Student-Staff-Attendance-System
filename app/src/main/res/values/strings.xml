@@ -51,4 +51,12 @@
     <string name="hint_phone">Phone</string>
     <string name="hint_username">Username</string>
     <string name="edit_your_profile">Edit your profile</string>
+    <string name="today_date">March 22, 2022</string>
+    <string name="hint_male_staff">Male staff</string>
+    <string name="hint_female_staff">Female staff</string>
+    <string name="commit">Commit</string>
+    <string name="hint_male_student">Male students</string>
+    <string name="hint_female_student">Female students</string>
+    <string name="student">Student</string>
+    <string name="staff">Staff</string>
 </resources>

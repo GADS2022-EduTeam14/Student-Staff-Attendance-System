@@ -47,7 +47,7 @@ class LoginFragment : Fragment(), UiAction {
         registerInstead.onClick { findNavController().navigate(R.id.action_loginFragment_to_registerFragment) }
 
         login.onClick {
-            (activity as AuthActivity).goto(OrganizationBaseActivity::class.java)
+            (activity as AuthActivity).goto(SchoolBaseActivity::class.java)
         }
 
     }

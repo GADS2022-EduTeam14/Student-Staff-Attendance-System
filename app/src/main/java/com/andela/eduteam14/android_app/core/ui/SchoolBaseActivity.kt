@@ -11,8 +11,6 @@ import com.andela.eduteam14.android_app.MainApplication
 import com.andela.eduteam14.android_app.R
 import com.andela.eduteam14.android_app.core.di.CoreComponent
 import com.andela.eduteam14.android_app.core.ui.extensions.onItemClick
-import com.andela.eduteam14.android_app.core.ui.settings.GO_TO_LOGIN
-import com.andela.eduteam14.android_app.core.ui.settings.KEY_DESTINATION
 import com.andela.eduteam14.android_app.databinding.ActivityBaseBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -27,8 +25,8 @@ class SchoolBaseActivity : AppCompatActivity(), UiAction {
     private val binding get() = _binding
     lateinit var coreComponent: CoreComponent
 
-    private lateinit var toolbar: MaterialToolbar
-    private lateinit var fab: ExtendedFloatingActionButton
+    lateinit var toolbar: MaterialToolbar
+    lateinit var recordFab: ExtendedFloatingActionButton
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,11 +66,11 @@ class SchoolBaseActivity : AppCompatActivity(), UiAction {
     }
 
     fun hideFab() {
-        fab.hide()
+        recordFab.hide()
     }
 
     fun showFab() {
-        fab.show()
+        recordFab.show()
     }
 
     private fun onStartSearch() {
@@ -93,7 +91,7 @@ class SchoolBaseActivity : AppCompatActivity(), UiAction {
     override fun initViews() {
         navView = binding?.SchoolBottomNav!!
         toolbar = binding?.BaseToolbar!!
-        fab = binding?.BaseExtendedFab!!
+        recordFab = binding?.BaseExtendedFab!!
     }
 
     override fun onDestroyComponents() {

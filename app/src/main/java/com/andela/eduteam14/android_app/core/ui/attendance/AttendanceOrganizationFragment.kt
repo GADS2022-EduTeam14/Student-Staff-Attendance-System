@@ -64,7 +64,7 @@ class AttendanceOrganizationFragment : Fragment(), UiAction {
     }
 
     override fun onDestroyComponents() {
-
+        _binding = null
     }
 
     override fun onDestroy() {

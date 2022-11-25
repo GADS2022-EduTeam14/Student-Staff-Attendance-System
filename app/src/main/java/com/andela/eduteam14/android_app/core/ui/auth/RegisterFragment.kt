@@ -1,6 +1,5 @@
 package com.andela.eduteam14.android_app.core.ui.auth
 
-import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,11 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.andela.eduteam14.android_app.R
+import com.andela.eduteam14.android_app.core.domain.usecase.ChooseOrganizationDialogUseCase
+import com.andela.eduteam14.android_app.core.ui.OrganizationBaseActivity
+import com.andela.eduteam14.android_app.core.ui.SchoolBaseActivity
 import com.andela.eduteam14.android_app.core.ui.UiAction
+import com.andela.eduteam14.android_app.core.ui.extensions.goto
 import com.andela.eduteam14.android_app.core.ui.extensions.onClick
 import com.andela.eduteam14.android_app.databinding.FragmentRegisterBinding
 
@@ -21,6 +24,8 @@ class RegisterFragment : Fragment(), UiAction {
     private val binding get() = _binding
 
     private lateinit var login: TextView
+
+    private lateinit var dialogUseCase: ChooseOrganizationDialogUseCase
 
 
     override fun onCreateView(
@@ -37,6 +42,8 @@ class RegisterFragment : Fragment(), UiAction {
         super.onViewCreated(view, savedInstanceState)
         initViews()
 
+        dialogUseCase = ChooseOrganizationDialogUseCase(requireContext(), this)
+
         createAccountBtn.onClick {
             loadDialog()
         }
@@ -47,54 +54,17 @@ class RegisterFragment : Fragment(), UiAction {
     }
 
     private fun loadDialog() {
-        showDialog(
-            onChooseOrganization = {
-                findNavController().navigate(
-                    R.id.action_registerFragment_to_emailVerificationFragment
-                )
-            },
-            onChooseSchool = {
-                findNavController().navigate(
-                    R.id.action_registerFragment_to_emailVerificationFragment
-                )
-            }
-        )
+       dialogUseCase(
+           onChooseSchool = {
+               (activity as AuthActivity).goto(SchoolBaseActivity::class.java)
+           },
+           onChooseOrganization = {
+               (activity as AuthActivity).goto(OrganizationBaseActivity::class.java)
+           }
+       )
     }
 
-    private fun showDialog(
-        onChooseOrganization: () -> Unit,
-        onChooseSchool: () -> Unit,
-    ) {
-        val builder = AlertDialog.Builder(
-            requireContext(),
-            R.style.CustomAlertDialog
-        ).create()
 
-        val view =
-            layoutInflater.inflate(R.layout.choose_organization_dialog_layout, null)
-
-        val chooseOrganization =
-            view.findViewById<Button>(R.id.ChooseOrganization)
-
-        chooseOrganization.onClick {
-            builder.dismiss()
-            onChooseOrganization()
-        }
-
-        val chooseSchool =
-            view.findViewById<Button>(R.id.ChooseSchool)
-
-        chooseSchool.onClick {
-            builder.dismiss()
-            onChooseSchool()
-        }
-
-        builder.setView(view)
-
-        builder.setCanceledOnTouchOutside(true)
-
-        builder.show()
-    }
 
     override fun initViews() {
         createAccountBtn = binding?.RegisterFragmentRegisterBtn!!
