@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">android_app</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="welcome_message">Welcome</string>
@@ -13,6 +12,7 @@
     for making your next decision</string>
     <string name="next">Next</string>
     <string name="continue_text">Continue</string>
+    <string name="edu14">Edu14</string>
 
     <!-- This is just a template for organization types-->
     <string-array name="OrgTypeDummy">
@@ -42,5 +42,30 @@
         <item>22:00</item>
         <item>23:00</item>
     </string-array>
+
+    <!--Khalid-->
+    <string name="app_name">EduTeam 14</string>
+    <string name="team_name">EduTeam 14</string>
+    <string name="create_account">Create account</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="smart_school_attendance">Smart school\nattendance</string>
+    <string name="not_yet_implemented">Not yet implemented</string>
+    <string name="home">Home</string>
+    <string name="attendance">Attendance</string>
+    <string name="history">History</string>
+    <string name="settings">Settings</string>
+    <string name="submit">Submit</string>
+    <string name="request_new_code">Request new code?</string>
+    <string name="send_5_digit_code">A 5-digit code has been sent to\nexample@email.com. Please enter\nit below to continue.</string>
+    <string name="account_activation">Account\nActivation</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="login">Login</string>
+    <string name="organization">Organization</string>
+    <string name="school">School</string>
+    <string name="register_instead">New user? Register instead</string>
+    <string name="already_registered">Already a member? Login here</string>
 
 </resources>

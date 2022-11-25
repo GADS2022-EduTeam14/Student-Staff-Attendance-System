@@ -36,7 +36,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/edt_SchoolName"
+            android:id="@+id/edt_AddSchoolName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -47,7 +47,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/edt_SchoolEmail"
+            android:id="@+id/edt_AddSchoolEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -58,7 +58,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/edt_SchoolNumber"
+            android:id="@+id/edt_AddSchoolNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -69,7 +69,7 @@
             android:inputType="number" />
 
         <EditText
-            android:id="@+id/edt_Address"
+            android:id="@+id/edt_AddAddress"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="15dp"
