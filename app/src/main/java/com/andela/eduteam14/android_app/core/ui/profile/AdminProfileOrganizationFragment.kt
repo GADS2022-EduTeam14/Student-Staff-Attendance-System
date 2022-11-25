@@ -1,4 +1,4 @@
-package com.andela.eduteam14.android_app.core.ui.history
+package com.andela.eduteam14.android_app.core.ui.profile
 
 import android.content.Context
 import android.os.Bundle
@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.andela.eduteam14.android_app.core.ui.OrganizationBaseActivity
 import com.andela.eduteam14.android_app.core.ui.SchoolBaseActivity
 import com.andela.eduteam14.android_app.core.ui.UiAction
@@ -16,19 +14,14 @@ import com.andela.eduteam14.android_app.core.ui.viewmodel.OrganizationViewModel
 import com.andela.eduteam14.android_app.core.ui.viewmodel.OrganizationViewModelFactory
 import com.andela.eduteam14.android_app.core.ui.viewmodel.SchoolViewModel
 import com.andela.eduteam14.android_app.core.ui.viewmodel.SchoolViewModelFactory
-import com.andela.eduteam14.android_app.databinding.FragmentHistoryOrganizationBinding
-import com.andela.eduteam14.android_app.databinding.FragmentHistorySchoolBinding
+import com.andela.eduteam14.android_app.databinding.FragmentAdminProfileBinding
+import com.andela.eduteam14.android_app.databinding.FragmentAdminProfileOrganizationBinding
 
-class HistoryOrganizationFragment : Fragment(), UiAction {
+class AdminProfileOrganizationFragment : Fragment(), UiAction {
 
-    private var _binding: FragmentHistoryOrganizationBinding? = null
+    private var _binding: FragmentAdminProfileOrganizationBinding? = null
 
     private val binding get() = _binding
-
-
-    private lateinit var recyclerView: RecyclerView
-
-    private lateinit var historyAdapter: HistoryOrganizationAdapter
 
     private val viewModel: OrganizationViewModel by viewModels {
         OrganizationViewModelFactory(
@@ -47,7 +40,7 @@ class HistoryOrganizationFragment : Fragment(), UiAction {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHistoryOrganizationBinding.inflate(inflater, container, false)
+        _binding = FragmentAdminProfileOrganizationBinding.inflate(inflater, container, false)
 
         return binding?.root
     }
@@ -57,25 +50,14 @@ class HistoryOrganizationFragment : Fragment(), UiAction {
         initViews()
 
 
-        historyAdapter = HistoryOrganizationAdapter()
-
-
-        recyclerView.apply {
-            layoutManager = LinearLayoutManager(requireContext())
-            adapter = historyAdapter
-        }
-
-        historyAdapter.submitList(viewModel.history)
-
     }
 
-
     override fun initViews() {
-        recyclerView = binding?.HistoryOrganizationRecyclerView!!
+
     }
 
     override fun onDestroyComponents() {
-        _binding = null
+       _binding = null
     }
 
     override fun onDestroy() {
