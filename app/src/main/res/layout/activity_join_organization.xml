@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Join an organization"
+            android:text="@string/join_an_organization"
             android:textSize="30sp"
             android:layout_marginTop="20dp"/>
 
@@ -54,7 +54,7 @@
                 android:layout_marginTop="10dp"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Temporary Org name" />
+                android:text="@string/org_name" />
 
             <TextView
                 android:id="@+id/tv_organizationLocation"
@@ -64,7 +64,7 @@
                 android:layout_marginBottom="10dp"
                 android:textSize="18sp"
                 android:layout_gravity="bottom|left"
-                android:text="Lagos, Nigeria" />
+                android:text="@string/org_location" />
         </androidx.cardview.widget.CardView>
 
         <Button
@@ -73,6 +73,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="160dp"
-            android:text="Join" />
+            android:text="@string/join" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

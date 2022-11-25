@@ -2,14 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout5"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".core.ui.attendance.StudentAttendanceFirstFragment">
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="297dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="391dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="88dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,50 +21,37 @@
             android:id="@+id/tv_Attendance_Date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
             android:text="@string/date"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_grade_LastPage"
-            android:layout_width="match_parent"
+            android:id="@+id/tv_grade_First_page"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:text="Grade 10" />
+            android:text="@string/grade" />
 
         <EditText
             android:id="@+id/edt_Male_Attendance"
-            android:layout_width="131dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
             android:hint="@string/hint_male_student"
             android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/edt_Female_Attendance"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:hint="@string/hint_female_student"
             android:minHeight="48dp" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:layout_gravity="center"
+            android:text="@string/next"/>
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_Commit_StuAttendance"
-        android:layout_width="196dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="212dp"
-        android:text="@string/commit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:text="Add your school"
+            android:text="@string/add_your_school"
             android:textAlignment="center"
             android:textSize="30sp" />
 
@@ -39,34 +39,37 @@
             android:id="@+id/edt_AddSchoolName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="15dp"
             android:ems="10"
-            android:hint="School Name"
-            android:inputType="textPersonName" />
+            android:hint="@string/hint_school_name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/edt_AddSchoolEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="15dp"
             android:ems="10"
-            android:hint="School Email"
-            android:inputType="textEmailAddress" />
+            android:hint="@string/hint_school_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/edt_AddSchoolNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="15dp"
             android:ems="10"
-            android:hint="School Number"
-            android:inputType="number" />
+            android:hint="@string/hint_school_number"
+            android:inputType="number"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/edt_AddAddress"
@@ -77,7 +80,7 @@
             android:layout_marginRight="15dp"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="Address"
+            android:hint="@string/hint_address"
             android:inputType="textMultiLine" />
 
         <Button
@@ -85,7 +88,7 @@
             android:layout_width="335dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Continue" />
+            android:text="@string/continue_text" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

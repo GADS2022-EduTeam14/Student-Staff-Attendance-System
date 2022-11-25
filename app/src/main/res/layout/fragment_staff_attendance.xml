@@ -22,7 +22,7 @@
             android:layout_margin="15dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:text="March, 22, 2022"
+            android:text="@string/date"
             android:textStyle="bold" />
 
         <EditText
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:hint="Male Student"
+            android:hint="@string/hint_male_staff"
             android:minHeight="48dp" />
 
         <EditText
@@ -40,7 +40,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:hint="Female Student"
+            android:hint="@string/female_staff"
             android:minHeight="48dp" />
 
 
@@ -50,8 +50,8 @@
         android:id="@+id/btn_Commit_StuAttendance"
         android:layout_width="196dp"
         android:layout_height="48dp"
-        android:layout_marginTop="304dp"
-        android:text="Commit"
+        android:layout_marginTop="220dp"
+        android:text="@string/commit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

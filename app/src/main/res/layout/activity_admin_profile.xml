@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:gravity="center"
-        android:text="Edit your profile"
+        android:text="@string/edit_your_profile"
         android:padding="35dp"
         android:textSize="34sp"
         android:textStyle="bold" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/username"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:inputType="textPersonName" />
@@ -37,7 +37,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:ems="10"
-        android:hint="Phone number"
+        android:hint="@string/phone_number"
         android:inputType="none|phone" />
 
     <EditText
@@ -47,7 +47,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Address"
+        android:hint="@string/hint_address"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:inputType="textMultiLine" />

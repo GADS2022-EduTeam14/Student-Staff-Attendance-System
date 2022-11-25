@@ -13,7 +13,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginRight="35dp"
         android:layout_marginLeft="35dp"
-        android:text="More School information"
+        android:text="@string/more_school_information"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="School days"
+            android:text="@string/school_days"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -43,37 +43,37 @@
             android:id="@+id/cbx_Monday"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Monday" />
+            android:text="@string/monday" />
 
         <CheckBox
             android:id="@+id/cbx_Tuesday"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Tuesday" />
+            android:text="@string/tuesday" />
 
         <CheckBox
             android:id="@+id/cbx_Wednesday"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Wednesday" />
+            android:text="@string/wednesday" />
 
         <CheckBox
             android:id="@+id/cbx_Thursday"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Thursday" />
+            android:text="@string/thursday" />
 
         <CheckBox
             android:id="@+id/cbx_Friday"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Friday" />
+            android:text="@string/friday" />
 
         <CheckBox
             android:id="@+id/cbx_Saturday"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Saturday" />
+            android:text="@string/saturday" />
 
     </LinearLayout>
 
@@ -98,7 +98,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="From" />
+                android:text="@string/from" />
 
             <Spinner
                 android:id="@+id/spn_mon_frm"
@@ -150,7 +150,7 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="To" />
+                android:text="@string/to" />
 
             <Spinner
                 android:id="@+id/spn_mon_to"
@@ -198,7 +198,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Times"
+        android:text="@string/times"
         android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -207,11 +207,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_CreateSchool"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Create School"
+        android:text="@string/create_school"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
