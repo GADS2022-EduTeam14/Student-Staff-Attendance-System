@@ -114,24 +114,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "android-custom-view/home/khalid/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.7.0/289bbb3a7fea52532f1163487f9469217ee608a9/material-1.7.0-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_SELECTED": "BottomNavigationView",
-    "android-custom-view/home/khalid/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/java/com/andela/eduteam14/android_app/pinentry/PinEntryEditText.java_SELECTED": "PinEntryEditText",
-    "cidr.known.project.marker": "true",
-    "last_directory_selection": "/home/khalid/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/drawable",
-    "last_opened_file_path": "/home/khalid/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/drawable",
-    "memory.settings.postsync.last.time.stamp": "1669414194782",
-    "project.structure.last.edited": "Dependencies",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;android-custom-view/home/khalid/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.7.0/289bbb3a7fea52532f1163487f9469217ee608a9/material-1.7.0-sources.jar!/com/google/android/material/bottomnavigation/BottomNavigationView.java_SELECTED&quot;: &quot;BottomNavigationView&quot;,
+    &quot;android-custom-view/home/khalid/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/java/com/andela/eduteam14/android_app/pinentry/PinEntryEditText.java_SELECTED&quot;: &quot;PinEntryEditText&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/khalid/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/khalid/AndroidStudioProjects/Student-Staff-Attendance-System/app/src/main/res/drawable&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1669414194782&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
