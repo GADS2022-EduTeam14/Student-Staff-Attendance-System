@@ -13,7 +13,7 @@ import com.andela.eduteam14.android_app.databinding.FragmentRegisterBinding
 
 class AddOrganizationFragment : Fragment(), UiAction {
 
-    private var _binding: FragmentAddOrganization  = null
+    private var _binding: FragmentAddOrganizationBinding?  = null
     private val binding get() = _binding
 
     private lateinit var mainItem: TextView
@@ -23,7 +23,7 @@ class AddOrganizationFragment : Fragment(), UiAction {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentAddOrganization.Binding.inflate(inflater, container, false)
+        _binding = FragmentAddOrganizationBinding.inflate(inflater, container, false)
 
         return binding?.root
     }

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.andela.eduteam14.android_app.R
-import com.andela.eduteam14.android_app.core.ui.onboarding.Onboarding
+
 
 class ThirdScreenFragment : Fragment() {
 
