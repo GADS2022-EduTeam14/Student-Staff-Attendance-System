@@ -59,4 +59,7 @@
     <string name="hint_female_student">Female students</string>
     <string name="student">Student</string>
     <string name="staff">Staff</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="grade_number">Grade 1</string>
 </resources>

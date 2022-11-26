@@ -21,9 +21,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline18" />
 
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/LocalBrown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="@string/grade_number" />
+
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/StaffAttendanceFragmentFemale"
+        android:id="@+id/StudentAttendanceFragmentFemale"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_female_student"
+        android:textColorHint="?attr/colorPrimary"
+        app:boxStrokeColor="?attr/colorPrimary"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="1.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/className">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold"
+            android:id="@+id/StudentAttendanceFragmentFemaleEdit"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/StudentAttendanceFragmentMale"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -37,44 +86,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <com.google.android.material.textfield.TextInputEditText
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:inputType="numberDecimal"
-            android:textColor="?attr/colorPrimary"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="14dp"
-            tools:layout_editor_absoluteY="86dp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/StaffAttendanceFragmentMale"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:hint="@string/hint_female_student"
-        android:textColorHint="?attr/colorPrimary"
-        app:boxStrokeColor="?attr/colorPrimary"
-        app:boxStrokeWidth="1dp"
-        app:boxStrokeWidthFocused="1.5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StaffAttendanceFragmentFemale">
+        app:layout_constraintTop_toBottomOf="@+id/StudentAttendanceFragmentFemale">
 
         <com.google.android.material.textfield.TextInputEditText
             style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:imeOptions="actionDone"
+            android:id="@+id/StudentAttendanceFragmentMaleEdit"
             android:inputType="numberDecimal"
             android:textColor="?attr/colorPrimary"
             android:textStyle="bold"
@@ -84,19 +103,37 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
+
     <Button
-        android:id="@+id/RegisterFragmentRegisterBtn"
-        style="@style/Widget.Material3.Button"
+        android:id="@+id/StudentAttendanceFragmentPreviousBtn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/commit"
+        android:layout_marginEnd="8dp"
+        android:text="@string/previous"
         android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline19"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/StudentAttendanceFragmentNextBtn"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/guideline17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/guideline19" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline17"
@@ -111,6 +148,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="36dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
