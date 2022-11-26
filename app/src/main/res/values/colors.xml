@@ -20,7 +20,7 @@
     <color name="LocalYellow">#FBAD11</color>
     <color name="LocalYellowDark">#7A5304</color>
 
-
-
+    <color name="LocalGreen">#116702</color>
+    <color name="LocalRed">#8C0707</color>
 
 </resources>

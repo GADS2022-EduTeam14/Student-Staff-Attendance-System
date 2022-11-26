@@ -137,13 +137,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="adminProfileFragment2">
+                  <entry key="adminProfileOrganizationFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="880" />
-                            <option name="y" value="37" />
+                            <option name="x" value="896" />
+                            <option name="y" value="23" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -208,7 +208,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_settingsOrganizationFragment_to_adminProfileFragment2">
+                            <entry key="action_settingsOrganizationFragment_to_adminProfileOrganizationFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_settingsOrganizationFragment_to_loginFragment3">
                               <value>
                                 <LayoutPositions />
                               </value>

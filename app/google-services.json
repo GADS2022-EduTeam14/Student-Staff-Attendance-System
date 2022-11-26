@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "53913240591",
+    "firebase_url": "https://gads-eduteam14-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gads-eduteam14",
+    "storage_bucket": "gads-eduteam14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53913240591:android:1d93912ce6c0eb7fdfcf7a",
+        "android_client_info": {
+          "package_name": "com.andela.eduteam14.android_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53913240591-383k0s30e6oiuqck3to9dqnntf7894e6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andela.eduteam14.android_app",
+            "certificate_hash": "79690a7188aefab4c20a2114188e20b30e24f096"
+          }
+        },
+        {
+          "client_id": "53913240591-snj4dms21l8hk6jc3rpett9sruc508nb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmJ6hHPUHyC_kZRXL2ohyJSf2G-djCv1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53913240591-snj4dms21l8hk6jc3rpett9sruc508nb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
