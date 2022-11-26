@@ -132,18 +132,61 @@
             </LayoutPositions>
           </value>
         </entry>
+        <entry key="my_nav.xml">
+          <value>
+            <LayoutPositions>
+              <option name="myPositions">
+                <map>
+                  <entry key="splashFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_splashFragment_to_viewPagerFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="viewPagerFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="256" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </LayoutPositions>
+          </value>
+        </entry>
         <entry key="organization_nav_graph.xml">
           <value>
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="adminProfileFragment2">
+                  <entry key="adminProfileOrganizationFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="880" />
-                            <option name="y" value="37" />
+                            <option name="x" value="896" />
+                            <option name="y" value="23" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -208,7 +251,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_settingsOrganizationFragment_to_adminProfileFragment2">
+                            <entry key="action_settingsOrganizationFragment_to_adminProfileOrganizationFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_settingsOrganizationFragment_to_loginFragment3">
                               <value>
                                 <LayoutPositions />
                               </value>

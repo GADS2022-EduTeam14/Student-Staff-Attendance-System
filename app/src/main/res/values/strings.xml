@@ -1,4 +1,47 @@
 <resources>
+
+    <string name="welcome_message">Welcome</string>
+    <string name="welcome_text">We are here to make your attendance system
+        as easy as possible</string>
+    <string name="frag_screen_title_two">Need a smart attendance system?</string>
+    <string name="frag_screen_title_three">Are you an organization that needs to organize school data?</string>
+    <string name="frag_screen_text_two"> We got you covered for attendance collection
+    and insight into staff and student performance data</string>
+    <string name="frag_screen_text_three"> We got you covered for easy access to data
+    for making your next decision</string>
+    <string name="next">Next</string>
+    <string name="continue_text">Continue</string>
+    <string name="edu14">Edu14</string>
+
+    <!-- This is the entries for organization types-->
+    <string-array name="OrgTypeDummy">
+        <item>Ghana Gov</item>
+        <item>Nigeria Gov</item>
+        <item>Nigeria Gov</item>
+    </string-array>
+
+    <!-- This is the entries for time-->
+    <string-array name="SchoolTimes">
+        <item>6:00</item>
+        <item>7:00</item>
+        <item>8:00</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+
     <string name="app_name">EduTeam 14</string>
     <string name="team_name">EduTeam 14</string>
     <string name="create_account">Create account</string>
@@ -14,7 +57,7 @@
     <string name="settings">Settings</string>
     <string name="submit">Submit</string>
     <string name="request_new_code">Request new code?</string>
-    <string name="send_5_digit_code">A 5-digit code has been sent to\nexample@email.com. Please enter\nit below to continue.</string>
+    <string name="send_5_digit_code">A 5-digit code has been sent to\nexample@email.com. Please enter it below to continue.</string>
     <string name="account_activation">Account\nActivation</string>
     <string name="welcome_back">Welcome back</string>
     <string name="login">Login</string>
@@ -22,4 +65,72 @@
     <string name="school">School</string>
     <string name="register_instead">New user? Register instead</string>
     <string name="already_registered">Already a member? Login here</string>
+    <string name="dummy_organization">Federal Ministry of Education</string>
+    <string name="dummy_organization_location">Abuja, Nigeria</string>
+    <string name="search_organization">Search organization</string>
+    <string name="total_male_staff">Male staff: %1$s</string>
+    <string name="total_female_staff">Female staff: %1$s</string>
+    <string name="male_staff">Male staff: %1$s</string>
+    <string name="school_name">Maryland International College</string>
+    <string name="time">2 days ago</string>
+    <string name="female_student">Female students: %1$s</string>
+    <string name="male_student">Male students: %1$s</string>
+    <string name="record">Record</string>
+    <string name="search_all">Search all</string>
+    <string name="received_by">Received by The Federal Ministry of Education Abuja, Nigeria.</string>
+    <string name="logout">Log out</string>
+    <string name="admin_profile">Admin Profile</string>
+    <string name="personal">Personal</string>
+    <string name="official">Official</string>
+    <string name="student_classes">Students and classes</string>
+    <string name="staff_information">Staff Information</string>
+    <string name="school_information">School Information</string>
+    <string name="save">Save</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_username">Username</string>
+    <string name="today_date">March 22, 2022</string>
+    <string name="hint_female_staff">Female staff</string>
+    <string name="student">Student</string>
+    <string name="staff">Staff</string>
+    <string name="grade_number">Grade 1</string>
+    <string name="commit">Commit</string>
+    <string name="hint_female_student">Female Student</string>
+    <string name="hint_male_student">Male Student</string>
+    <!-- This will need to be update with code -->
+    <string name="date">March, 22, 2022</string>
+    <string name="female_staff">Female Staff</string>
+    <string name="hint_male_staff">Male Staff</string>
+    <string name="grade">Grade 10</string>
+    <string name="finish">Finish</string>
+    <string name="add_your_organization">Add your Organization</string>
+    <string name="Hint_organization_name">Organization Name</string>
+    <string name="hint_address">Address</string>
+    <string name="create_orginazation">Create Orginazation</string>
+    <string name="add_your_school">Add your school</string>
+    <string name="hint_school_name">School Name</string>
+    <string name="hint_school_email">School Email</string>
+    <string name="hint_school_number">School Number</string>
+    <string name="create_school">Create School</string>
+    <string name="times">Times</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="school_days">School days</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="more_school_information">More School information</string>
+    <string name="edit_your_profile">Edit your profile</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone number</string>
+    <string name="hint_class_name">Class name</string>
+    <string name="hint_number_of_students">Number of students</string>
+    <string name="enter_your_class">Enter your Class</string>
+    <string name="join_an_organization">Join an organization</string>
+    <string name="join">Join</string>
+    <string name="org_location">Lagos, Nigeria</string>
+    <string name="org_name">Temporary Org name</string>
+    <string name="previous">Previous</string>
 </resources>

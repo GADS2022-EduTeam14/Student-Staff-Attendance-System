@@ -10,7 +10,7 @@
         android:id="@+id/SplashScreenTeamName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/team_name"
+        android:text="@string/edu14"
         style="@style/TextAppearance.AppCompat.Headline"
         android:textStyle="bold"
         android:textSize="32sp"

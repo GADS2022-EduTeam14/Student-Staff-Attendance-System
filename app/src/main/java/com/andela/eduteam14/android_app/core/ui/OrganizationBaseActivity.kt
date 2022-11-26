@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.andela.eduteam14.android_app.MainApplication
 import com.andela.eduteam14.android_app.R
+import com.andela.eduteam14.android_app.core.di.CoreComponent
 import com.andela.eduteam14.android_app.databinding.ActivityBaseBinding
 import com.andela.eduteam14.android_app.databinding.ActivityOrganizationBaseBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -16,8 +18,12 @@ class OrganizationBaseActivity : AppCompatActivity(), UiAction {
 
     private val binding get() = _binding
 
+    lateinit var coreComponent: CoreComponent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        coreComponent = (application as MainApplication).coreComponent
 
         _binding = ActivityOrganizationBaseBinding.inflate(layoutInflater)
 

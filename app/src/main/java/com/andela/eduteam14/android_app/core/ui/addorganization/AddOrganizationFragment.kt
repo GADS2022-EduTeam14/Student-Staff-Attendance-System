@@ -13,7 +13,7 @@ import com.andela.eduteam14.android_app.databinding.FragmentRegisterBinding
 
 class AddOrganizationFragment : Fragment(), UiAction {
 
-    private var _binding: FragmentAddOrganizationBinding? = null
+    private var _binding: FragmentAddOrganizationBinding?  = null
     private val binding get() = _binding
 
     private lateinit var mainItem: TextView
