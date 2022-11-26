@@ -46,7 +46,7 @@
         android:label="StaffAttendanceFragment" />
     <fragment
         android:id="@+id/studentAttendanceFragment"
-        android:name="com.andela.eduteam14.android_app.core.ui.attendance.StudentAttendanceFragment"
+        android:name="com.andela.eduteam14.android_app.core.ui.attendance.StudentAttendanceLastFragment"
         android:label="StudentAttendanceFragment" />
     <fragment
         android:id="@+id/classInformationFragment"

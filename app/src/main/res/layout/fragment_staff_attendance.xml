@@ -113,4 +113,58 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="50dp" />
 
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Attendance_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/date"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_Staff_M_Attendance"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/hint_male_staff"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edt_Staff_F_Attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/female_staff"
+            android:minHeight="48dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Commit_StuAttendance"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/commit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
