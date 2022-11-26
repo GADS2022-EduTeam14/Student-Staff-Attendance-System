@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<<<<<<< HEAD
-=======
     <TextView
         android:id="@+id/textView2"
         style="@style/TextAppearance.AppCompat.Headline"
@@ -137,7 +135,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="379dp" />
->>>>>>> student_attendance
+
 
     <Button
         android:id="@+id/save_button"
