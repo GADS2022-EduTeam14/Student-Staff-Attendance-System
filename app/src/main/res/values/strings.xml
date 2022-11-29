@@ -133,4 +133,8 @@
     <string name="org_location">Lagos, Nigeria</string>
     <string name="org_name">Temporary Org name</string>
     <string name="previous">Previous</string>
+    <string name="login_with_mobile_number">Login with Mobile Number</string>
+    <string name="already_registered_login">Already registered? Login</string>
+    <string name="complete">Complete</string>
+    <string name="resend_otp">Resend OTP</string>
 </resources>
