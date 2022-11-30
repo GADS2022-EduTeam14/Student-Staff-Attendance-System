@@ -45,42 +45,45 @@ class MobileNumberVerificationActivity : AppCompatActivity() {
         //Start loginFragment
         val registeredUserText = findViewById<TextView>(R.id.RegisteredUser)
 
-        // Declaring fragment manager from making data
-        // transactions using the custom fragment
-        val myFragmentManager = supportFragmentManager
-        val loginFragmentTransaction = myFragmentManager.beginTransaction()
-        val loginFragment = LoginFragment()
 
         init()
         createAccount.setOnClickListener {
             phoneNumber = phoneNumberET.text.trim().toString()
             dialingCode = dialingCodeET.text.trim().toString()
+            email = emailET.toString()
+            password = passwordET.toString()
+            confirmPassword = confirmPasswordET.toString()
 
             //check length of dialing code and phone number
-            if((dialingCode.isNotEmpty()) && (dialingCode.length <= 3)){  //dialing code should be from 1 to 3
-                if ((phoneNumber.isNotEmpty()) && (phoneNumber.length == 10)){
-                    phoneNumber = "+${dialingCode}${phoneNumber}"
+            if(email.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()){
 
-                    val options = PhoneAuthOptions.newBuilder(auth)
-                        .setPhoneNumber(phoneNumber)       // Phone number to verify
-                        .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                        .setActivity(this)                 // Activity (for callback binding)
-                        .setCallbacks(callbacks)          // OnVerificationStateChangedCallbacks
-                        .build()
-                    PhoneAuthProvider.verifyPhoneNumber(options)
+                if((dialingCode.isNotEmpty()) && (dialingCode.length <= 3)){  //dialing code should be from 1 to 3
+                    if ((phoneNumber.isNotEmpty()) && (phoneNumber.length == 10)){
+                        phoneNumber = "+${dialingCode}${phoneNumber}"
 
-                } else{
-                    Toast.makeText(this, "Please enter a 10 number",Toast.LENGTH_SHORT).show()
+                        val options = PhoneAuthOptions.newBuilder(auth)
+                            .setPhoneNumber(phoneNumber)       // Phone number to verify
+                            .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
+                            .setActivity(this)                 // Activity (for callback binding)
+                            .setCallbacks(callbacks)          // OnVerificationStateChangedCallbacks
+                            .build()
+                        PhoneAuthProvider.verifyPhoneNumber(options)
+
+                    } else{
+                        Toast.makeText(this, "Please enter a 10 number",Toast.LENGTH_SHORT).show()
+                    }
+                }else{
+                    Toast.makeText(this, "Please enter valid dialing code",Toast.LENGTH_SHORT).show()
                 }
-            }else{
-                Toast.makeText(this, "Please enter valid dialing code",Toast.LENGTH_SHORT).show()
+            } else{
+                Toast.makeText(this,"Please enter details into all fields",Toast.LENGTH_SHORT).show()
             }
+
         }
 
         //Setup OnClick for the TextView
         registeredUserText.setOnClickListener {
-            loginFragmentTransaction.add(R.id.fragmentContainerView, loginFragment)
-            loginFragmentTransaction.commit()
+            startActivity(Intent(this@MobileNumberVerificationActivity, AuthActivity::class.java))
         }
     }
 
@@ -88,6 +91,9 @@ class MobileNumberVerificationActivity : AppCompatActivity() {
         createAccount = findViewById(R.id.btn_createAcc)
         phoneNumberET = findViewById(R.id.edt_CreateAcc_Number)
         dialingCodeET = findViewById(R.id.edt_DialCode)
+        emailET = findViewById(R.id.edt_createAcc_email)
+        passwordET = findViewById(R.id.edt_createAcc_password)
+        confirmPasswordET = findViewById(R.id.edt_createAcc_confirm_password)
         auth = FirebaseAuth.getInstance()
         //add extra EditTexts for account creation
 
